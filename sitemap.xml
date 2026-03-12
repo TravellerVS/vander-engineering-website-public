@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://vanderengineering.com/</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vanderengineering.com/" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://vanderengineering.com/hr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vanderengineering.com/de" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://vanderengineering.com/it" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://vanderengineering.com/es" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://vanderengineering.com/nl" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vanderengineering.com/" />
+  </url>
+  <url>
+    <loc>https://vanderengineering.com/about-us</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vanderengineering.com/about-us" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://vanderengineering.com/hr/about-us" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vanderengineering.com/de/about-us" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://vanderengineering.com/it/about-us" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://vanderengineering.com/es/about-us" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://vanderengineering.com/nl/about-us" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vanderengineering.com/about-us" />
+  </url>
+  <url>
+    <loc>https://vanderengineering.com/career</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vanderengineering.com/career" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://vanderengineering.com/hr/career" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vanderengineering.com/de/career" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://vanderengineering.com/it/career" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://vanderengineering.com/es/career" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://vanderengineering.com/nl/career" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vanderengineering.com/career" />
+  </url>
+  <url>
+    <loc>https://vanderengineering.com/contact-us</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vanderengineering.com/contact-us" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://vanderengineering.com/hr/contact-us" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vanderengineering.com/de/contact-us" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://vanderengineering.com/it/contact-us" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://vanderengineering.com/es/contact-us" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://vanderengineering.com/nl/contact-us" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vanderengineering.com/contact-us" />
+  </url>
+</urlset>
