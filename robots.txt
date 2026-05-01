@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /projects/games/gameodoro
+Disallow: /projects/games/gameodora
 
 Sitemap: https://vanderengineering.com/sitemap.xml
