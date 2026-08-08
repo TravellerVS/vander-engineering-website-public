@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+  <title id="title">EmailHelper and ReaperPlugin AI delivery setup</title>
+  <desc id="desc">A workflow diagram comparing the AI-assisted setup for EmailHelper and ReaperPlugin, including context, project skills, safety boundaries, quality gates, and human review.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7fbf8"/>
+      <stop offset="0.52" stop-color="#eef8fb"/>
+      <stop offset="1" stop-color="#fff7df"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#123047" flood-opacity="0.13"/>
+    </filter>
+    <marker id="arrow" markerWidth="16" markerHeight="16" refX="13" refY="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L14,8 L2,14 Z" fill="#4d7f8d"/>
+    </marker>
+    <style>
+      .title { font: 700 44px Georgia, serif; fill: #123047; }
+      .subtitle { font: 400 22px Arial, sans-serif; fill: #52687a; }
+      .lane { fill: rgba(255,255,255,0.66); stroke: #cfe8df; stroke-width: 2; }
+      .card { fill: #fff; stroke: #b8d9d2; stroke-width: 2; filter: url(#shadow); }
+      .card-email { fill: #eef8fb; stroke: #9fd2dd; stroke-width: 2; filter: url(#shadow); }
+      .card-reaper { fill: #fff9e8; stroke: #efcf78; stroke-width: 2; filter: url(#shadow); }
+      .card-warn { fill: #fff3f5; stroke: #f4b8c1; stroke-width: 2; filter: url(#shadow); }
+      .label { font: 700 15px Arial, sans-serif; letter-spacing: 3.6px; fill: #8494a3; }
+      .heading { font: 700 25px Georgia, serif; fill: #123047; }
+      .body { font: 400 17px Arial, sans-serif; fill: #4f6577; }
+      .small { font: 400 15px Arial, sans-serif; fill: #637789; }
+      .pill { fill: #e8f6f1; stroke: #cfe8df; stroke-width: 1.4; }
+      .line { stroke: #4d7f8d; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+      .dash { stroke: #93bfc7; stroke-width: 3; fill: none; stroke-dasharray: 8 9; marker-end: url(#arrow); }
+      .note { font: 700 20px Arial, sans-serif; fill: #7a5c12; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="980" fill="url(#bg)"/>
+  <text x="82" y="88" class="title">The Setup Matters More Than The Prompt</text>
+  <text x="84" y="128" class="subtitle">Two real project setups: EmailHelper for Gmail triage, ReaperPlugin for safe REAPER session edits.</text>
+
+  <rect x="70" y="170" width="1460" height="150" rx="34" class="lane"/>
+  <text x="104" y="213" class="label">SHARED PRE-STEP</text>
+  <rect x="105" y="235" width="245" height="58" rx="22" class="pill"/>
+  <text x="134" y="270" class="body">CURRENT_CONTEXT.md</text>
+  <rect x="380" y="235" width="230" height="58" rx="22" class="pill"/>
+  <text x="420" y="270" class="body">clean worktree</text>
+  <rect x="640" y="235" width="245" height="58" rx="22" class="pill"/>
+  <text x="675" y="270" class="body">one bounded slice</text>
+  <rect x="915" y="235" width="250" height="58" rx="22" class="pill"/>
+  <text x="945" y="270" class="body">project skill first</text>
+  <rect x="1195" y="235" width="265" height="58" rx="22" class="pill"/>
+  <text x="1230" y="270" class="body">human review gate</text>
+
+  <rect x="82" y="382" width="670" height="365" rx="34" class="card-email"/>
+  <text x="122" y="430" class="label">EMAILHELPER</text>
+  <text x="122" y="474" class="heading">Gmail Workflows Need Guardrails</text>
+  <text x="122" y="516" class="body">Project skills point Codex at wrapper scripts:</text>
+  <text x="122" y="546" class="small">./scripts/build.sh, ./scripts/run.sh, ./scripts/verify_all.sh</text>
+  <text x="122" y="576" class="small">./scripts/eval.sh --gate</text>
+  <text x="122" y="623" class="body">Default mode is read-only triage. Writes only happen</text>
+  <text x="122" y="653" class="body">through selected-message workflows with app auth, CSRF,</text>
+  <text x="122" y="683" class="body">latest-summary validation, caps, scopes, and audit records.</text>
+
+  <rect x="848" y="382" width="670" height="365" rx="34" class="card-reaper"/>
+  <text x="888" y="430" class="label">REAPERPLUGIN</text>
+  <text x="888" y="474" class="heading">Creative Edits Need Preview</text>
+  <text x="888" y="516" class="body">The model interprets intent in the gateway, but REAPER</text>
+  <text x="888" y="546" class="body">changes run through schema validation and an allow-listed</text>
+  <text x="888" y="576" class="body">Lua executor.</text>
+  <text x="888" y="623" class="body">The trust loop is explicit:</text>
+  <text x="888" y="653" class="small">interpret -> preview -> apply -> undo -> validate in host</text>
+
+  <path d="M752 565 H846" class="line"/>
+
+  <rect x="112" y="810" width="405" height="112" rx="28" class="card"/>
+  <text x="146" y="852" class="note">AI can move quickly here.</text>
+  <text x="146" y="884" class="body">Small scoped changes, known scripts,</text>
+  <text x="146" y="912" class="body">repeatable output paths.</text>
+
+  <rect x="596" y="810" width="410" height="112" rx="28" class="card-warn"/>
+  <text x="630" y="852" class="note">AI must slow down here.</text>
+  <text x="630" y="884" class="body">Gmail writes, DAW edits, failed gates,</text>
+  <text x="630" y="912" class="body">unknown state, missing live evidence.</text>
+
+  <rect x="1084" y="810" width="405" height="112" rx="28" class="card"/>
+  <text x="1118" y="852" class="note">Humans decide trust.</text>
+  <text x="1118" y="884" class="body">Review findings, live validation,</text>
+  <text x="1118" y="912" class="body">release readiness, remaining risk.</text>
+
+  <path d="M517 866 H594" class="dash"/>
+  <path d="M1006 866 H1082" class="dash"/>
+</svg>
