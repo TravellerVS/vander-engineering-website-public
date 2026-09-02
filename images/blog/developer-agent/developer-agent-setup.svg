@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Maintainable developer agent setup</title>
+  <desc id="desc">A developer assigns a bounded task to an OpenClaw agent. The agent works through Codex in an isolated Git worktree, runs repository checks, and returns evidence for human approval. Repository rules, skills, operating memory, and stop conditions support every step.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M1 1 L13 7 L1 13 Z" fill="#62748a" />
+    </marker>
+    <style>
+      .title { font: 700 45px Georgia, serif; fill: #0d0d24; }
+      .subtitle { font: 400 21px Arial, sans-serif; fill: #526276; }
+      .phase { font: 700 14px Arial, sans-serif; letter-spacing: 3px; fill: #8d3d70; }
+      .heading { font: 700 23px Georgia, serif; fill: #0d0d24; }
+      .body { font: 400 16px Arial, sans-serif; fill: #526276; }
+      .small { font: 700 14px Arial, sans-serif; fill: #0d0d24; }
+      .edge { fill: none; stroke: #62748a; stroke-width: 4; marker-end: url(#arrow); }
+      .loop { fill: none; stroke: #b34b8d; stroke-width: 3; stroke-dasharray: 9 9; marker-end: url(#arrow); }
+      .zone { fill: #ffffff; stroke: #d8deea; stroke-width: 2; }
+      .agent { fill: #f7edf3; stroke: #b34b8d; stroke-width: 3; }
+      .work { fill: #edf5fb; stroke: #6389aa; stroke-width: 2; }
+      .verify { fill: #edf8f4; stroke: #3f8b74; stroke-width: 2; }
+      .human { fill: #fff8e5; stroke: #c79b32; stroke-width: 2; }
+      .rail { fill: #0d0d24; }
+      .railTitle { font: 700 15px Arial, sans-serif; letter-spacing: 2px; fill: #f0cce3; }
+      .railText { font: 600 15px Arial, sans-serif; fill: #ffffff; }
+      .railBody { font: 400 16px Arial, sans-serif; fill: #c5c6d4; }
+      .risk { fill: #fff4f6; stroke: #c15370; stroke-width: 2; }
+      .riskText { font: 700 15px Arial, sans-serif; fill: #8f2e4a; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f7f8fb" />
+  <text x="80" y="78" class="title">A Maintainable Developer Agent</text>
+  <text x="82" y="116" class="subtitle">The model writes code. The operating setup keeps the work scoped, testable, recoverable, and reviewable.</text>
+
+  <!-- Connectors are drawn before nodes so arrows remain behind the boxes. -->
+  <path d="M318 330 H382" class="edge" />
+  <path d="M666 330 H730" class="edge" />
+  <path d="M1014 330 H1078" class="edge" />
+  <path d="M1362 330 H1390" class="edge" />
+  <path d="M1218 470 C1218 550 860 575 548 470" class="loop" />
+
+  <rect x="70" y="190" width="258" height="280" rx="24" class="human" />
+  <text x="98" y="230" class="phase">ASSIGN</text>
+  <text x="98" y="274" class="heading">Human owner</text>
+  <text x="98" y="311" class="body">Defines one bounded task,</text>
+  <text x="98" y="337" class="body">acceptance criteria, risk,</text>
+  <text x="98" y="363" class="body">and approval boundaries.</text>
+  <rect x="98" y="396" width="202" height="46" rx="8" fill="#ffffff" stroke="#e6cf91" />
+  <text x="121" y="425" class="small">Task + definition of done</text>
+
+  <rect x="382" y="190" width="284" height="280" rx="24" class="agent" />
+  <text x="412" y="230" class="phase">COORDINATE</text>
+  <text x="412" y="274" class="heading">OpenClaw agent</text>
+  <text x="412" y="311" class="body">Loads repository context,</text>
+  <text x="412" y="337" class="body">selects the right skills,</text>
+  <text x="412" y="363" class="body">and enforces stop conditions.</text>
+  <rect x="412" y="396" width="224" height="46" rx="8" fill="#ffffff" stroke="#d8a7c5" />
+  <text x="452" y="425" class="small">Role + operating state</text>
+
+  <rect x="730" y="190" width="284" height="280" rx="24" class="work" />
+  <text x="760" y="230" class="phase">IMPLEMENT</text>
+  <text x="760" y="274" class="heading">Codex + approved tools</text>
+  <text x="760" y="311" class="body">Edits only the task branch</text>
+  <text x="760" y="337" class="body">inside an isolated worktree</text>
+  <text x="760" y="363" class="body">with scoped credentials.</text>
+  <rect x="760" y="396" width="224" height="46" rx="8" fill="#ffffff" stroke="#b8cfdf" />
+  <text x="791" y="425" class="small">Small, inspectable diff</text>
+
+  <rect x="1078" y="190" width="284" height="280" rx="24" class="verify" />
+  <text x="1108" y="230" class="phase">VERIFY</text>
+  <text x="1108" y="274" class="heading">Repository gates</text>
+  <text x="1108" y="311" class="body">Runs tests, build, lint,</text>
+  <text x="1108" y="337" class="body">diff checks, and the real</text>
+  <text x="1108" y="363" class="body">user-facing validation.</text>
+  <rect x="1108" y="396" width="224" height="46" rx="8" fill="#ffffff" stroke="#b7d9cd" />
+  <text x="1146" y="425" class="small">Evidence or recovery loop</text>
+
+  <rect x="1390" y="190" width="140" height="280" rx="24" class="human" />
+  <text x="1418" y="230" class="phase">SHIP</text>
+  <text x="1418" y="276" class="heading">Human</text>
+  <text x="1418" y="306" class="heading">review</text>
+  <text x="1418" y="353" class="body">Approve</text>
+  <text x="1418" y="379" class="body">release or</text>
+  <text x="1418" y="405" class="body">request a fix.</text>
+
+  <rect x="70" y="560" width="1460" height="180" rx="24" class="rail" />
+  <text x="104" y="606" class="railTitle">DURABLE OPERATING LAYER</text>
+  <rect x="104" y="632" width="300" height="70" rx="12" fill="#20203c" stroke="#50506f" />
+  <text x="132" y="660" class="railText">AGENTS.md</text>
+  <text x="132" y="685" class="railBody">Repo rules and verification</text>
+  <rect x="430" y="632" width="300" height="70" rx="12" fill="#20203c" stroke="#50506f" />
+  <text x="458" y="660" class="railText">Small reusable skills</text>
+  <text x="458" y="685" class="railBody">Known workflows, not prompt bulk</text>
+  <rect x="756" y="632" width="340" height="70" rx="12" fill="#20203c" stroke="#50506f" />
+  <text x="784" y="660" class="railText">CURRENT_CONTEXT.md + logs</text>
+  <text x="784" y="685" class="railBody">State that survives model context</text>
+  <rect x="1122" y="632" width="374" height="70" rx="12" fill="#20203c" stroke="#50506f" />
+  <text x="1150" y="660" class="railText">Stop conditions + least privilege</text>
+  <text x="1150" y="685" class="railBody">Pause on ambiguity or failed gates</text>
+
+  <rect x="302" y="780" width="996" height="66" rx="16" class="risk" />
+  <text x="800" y="820" text-anchor="middle" class="riskText">Production deploys, account changes, publication, and destructive actions still require explicit human approval.</text>
+</svg>
