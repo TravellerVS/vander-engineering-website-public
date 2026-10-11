@@ -59,12 +59,13 @@
 
   <rect x="730" y="190" width="284" height="280" rx="24" class="work" />
   <text x="760" y="230" class="phase">IMPLEMENT</text>
-  <text x="760" y="274" class="heading">Codex + approved tools</text>
-  <text x="760" y="311" class="body">Edits only the task branch</text>
-  <text x="760" y="337" class="body">inside an isolated worktree</text>
-  <text x="760" y="363" class="body">with scoped credentials.</text>
-  <rect x="760" y="396" width="224" height="46" rx="8" fill="#ffffff" stroke="#b8cfdf" />
-  <text x="791" y="425" class="small">Small, inspectable diff</text>
+  <text x="760" y="268" class="heading">Codex +</text>
+  <text x="760" y="296" class="heading">approved tools</text>
+  <text x="760" y="329" class="body">Edits only the task branch</text>
+  <text x="760" y="355" class="body">inside an isolated worktree</text>
+  <text x="760" y="381" class="body">with scoped credentials.</text>
+  <rect x="760" y="404" width="224" height="46" rx="8" fill="#ffffff" stroke="#b8cfdf" />
+  <text x="791" y="433" class="small">Small, inspectable diff</text>
 
   <rect x="1078" y="190" width="284" height="280" rx="24" class="verify" />
   <text x="1108" y="230" class="phase">VERIFY</text>
